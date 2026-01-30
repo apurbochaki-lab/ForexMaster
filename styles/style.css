@@ -25,6 +25,11 @@
      /* background-color: #F8FAFC; */
  }
 
+ .nav-logo>img{
+    width: 250px;
+    cursor: pointer;
+ }
+
  .nav-menu {
      display: flex;
      gap: 20px;
@@ -99,4 +104,43 @@
  .hero>.hero-image>img:hover {
      transform: translateY(-5px);
      box-shadow: 0 8px 16px rgba(11, 61, 145, 0.2);
+ }
+
+
+ .hide{
+    display: none;
+ }
+
+ /* Mobile Responsive */
+ @media screen and (max-width: 576px) {
+    /* Navbar */
+    .navbar, .nav-menu{
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .nav-logo{
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    /* Hero */
+    .hero{
+        flex-direction: column-reverse;
+    }
+
+    .hero>.hero-image>img{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    .hero>.hero-text{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .hero-text>.hero-description{
+        width: 100%;
+    }
  }
