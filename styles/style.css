@@ -156,8 +156,57 @@
      width: 250px;
  }
 
+ /* Trust Section */
+ .trust-section {
+     padding-top: 80px;
+     max-width: 1600px;
+     margin: 0 auto;
 
+     display: flex;
+     gap: 70px;
+     /* justify-content: space-between; */
+     justify-content: center;
+     align-items: center;
+ }
 
+ .trust-text-container {
+     width: 600px;
+ }
+
+ .trust-text-container>.trust-title {
+     font-size: 50px;
+     font-weight: 700;
+     padding-bottom: 20px;
+ }
+
+ .trust-option>h3 {
+     font-size: 20px;
+ }
+
+ .trust-text-container>.trust-option {
+     display: flex;
+     gap: 10px;
+     align-items: center;
+     padding-bottom: 10px;
+ }
+
+ .trust-option>img {
+     width: 35px;
+ }
+
+ .trust-section>img {
+    width: 500px;
+     border-radius: 30px;
+     box-shadow:
+         0 8px 25px rgba(15, 23, 42, 0.116),
+         0 2px 6px rgba(15, 23, 42, 0.04);
+     transition: transform 0.3s, box-shadow 0.3s;
+ }
+
+ .trust-section>img:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 8px 16px rgba(11, 61, 145, 0.2);
+ }
 
  .hide {
      display: none;
@@ -202,8 +251,22 @@
      }
 
      /* Cards Section */
-     .cards-section{
-        flex-wrap: wrap;
-        padding-top: 30px;
+     .cards-section {
+         flex-wrap: wrap;
+         padding-top: 30px;
+     }
+
+     /* Trust Section */
+     .trust-section{
+        flex-direction: column-reverse;
+     }
+
+     .trust-section{
+        margin-top: 20px;
+        padding: 30px;
+     }
+
+     .trust-section>img, .trust-text-container{
+        width: 100%;
      }
  }
