@@ -23,7 +23,7 @@
  /* Navbar */
  header {
      /* border: 1px solid salmon; */
-     max-width: 1200px;
+     max-width: 1300px;
      margin: 0 auto;
 
  }
@@ -95,6 +95,7 @@
  .hero-description {
      width: 450px;
      color: #334155;
+     font-weight: 600;
      padding-bottom: 20px;
  }
 
