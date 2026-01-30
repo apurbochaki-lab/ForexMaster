@@ -1,3 +1,13 @@
+ /* Bangla Font */
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&display=swap');
+
+ .noto-sans-font {
+     font-family: "Noto Sans Bengali", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-style: normal;
+ }
+
  /* Reset and base styles */
  * {
      margin: 0;
@@ -25,9 +35,9 @@
      /* background-color: #F8FAFC; */
  }
 
- .nav-logo>img{
-    width: 250px;
-    cursor: pointer;
+ .nav-logo>img {
+     width: 250px;
+     cursor: pointer;
  }
 
  .nav-menu {
@@ -106,41 +116,93 @@
      box-shadow: 0 8px 16px rgba(11, 61, 145, 0.2);
  }
 
+ /* Cards Section */
+ .cards-section {
+     padding-top: 70px;
+     max-width: 1600px;
+     margin: 0 auto;
 
- .hide{
-    display: none;
+     display: flex;
+     gap: 30px;
+     justify-content: center;
+ }
+
+ .cards-section>.card {
+     display: flex;
+     gap: 15px;
+     align-items: center;
+     width: 450px;
+     border-radius: 20px;
+     box-shadow:
+         0 8px 25px rgba(15, 23, 42, 0.116),
+         0 2px 6px rgba(15, 23, 42, 0.04);
+
+     transition: transform 0.3s, box-shadow 0.3s;
+ }
+
+ .cards-section>.card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 8px 16px rgba(11, 61, 145, 0.2);
+ }
+
+ .cards-section>.card>img {
+     width: 120px;
+     padding: 15px;
+     border-radius: 30px;
+ }
+
+ .cards-section>.card>.card-text>.card-description {
+     width: 250px;
+ }
+
+
+
+
+ .hide {
+     display: none;
  }
 
  /* Mobile Responsive */
  @media screen and (max-width: 576px) {
-    /* Navbar */
-    .navbar, .nav-menu{
-        flex-direction: column;
-        gap: 7px;
-    }
 
-    .nav-logo{
-        margin: 0 auto;
-        margin-bottom: 15px;
-    }
+     /* Navbar */
+     .navbar,
+     .nav-menu {
+         flex-direction: column;
+         gap: 7px;
+     }
 
-    /* Hero */
-    .hero{
-        flex-direction: column-reverse;
-    }
+     .nav-logo {
+         margin: 0 auto;
+         margin-bottom: 15px;
+     }
 
-    .hero>.hero-image>img{
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 30px;
-    }
+     /* Hero */
+     .hero {
+         flex-direction: column-reverse;
+     }
 
-    .hero>.hero-text{
-        width: 100%;
-        padding: 20px;
-    }
+     .hero>.hero-image {
+         padding: 20px;
+     }
 
-    .hero-text>.hero-description{
-        width: 100%;
-    }
+     .hero>.hero-image>img {
+         width: 100%;
+         margin-bottom: 20px;
+     }
+
+     .hero>.hero-text {
+         width: 100%;
+         padding: 20px;
+     }
+
+     .hero-text>.hero-description {
+         width: 100%;
+     }
+
+     /* Cards Section */
+     .cards-section{
+        flex-wrap: wrap;
+        padding-top: 30px;
+     }
  }
