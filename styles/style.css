@@ -195,7 +195,7 @@
  }
 
  .trust-section>img {
-    width: 500px;
+     width: 500px;
      border-radius: 30px;
      box-shadow:
          0 8px 25px rgba(15, 23, 42, 0.116),
@@ -207,6 +207,68 @@
      transform: translateY(-5px);
      box-shadow: 0 8px 16px rgba(11, 61, 145, 0.2);
  }
+
+ /* Our Analysis Section */
+ .our-analysis {
+     padding-top: 80px;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding-bottom: 100px; /*Need to remove*/
+ }
+
+ .analysis-title {
+     text-align: center;
+     font-size: 40px;
+     padding-bottom: 5px;
+ }
+
+ .analysis-description {
+     text-align: center;
+     font-size: 20px;
+     padding-bottom: 50px;
+ }
+
+ .analysis-card-container {
+     /* border: 1px solid red; */
+     display: flex;
+     gap: 35px;
+     justify-content: center;
+ }
+
+ .analysis-card {
+     /* border: 1px solid blue; */
+     width: 250px;
+     height: 250px;
+     padding: 30px 5px;
+     text-align: center;
+     background: #F8FAFC;
+     border-radius: 20px;
+     box-shadow:
+         0 10px 25px rgba(0, 0, 0, 0.08),
+         0 2px 6px rgba(0, 0, 0, 0.04);
+     transition: transform 0.3s, box-shadow 0.3s;
+
+     display: flex;
+     flex-direction: column;
+     justify-items: center;
+     align-items: center;
+ }
+
+ .analysis-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 8px 16px rgba(11, 61, 145, 0.2);
+     cursor: default;
+ }
+
+ .analysis-card>img {
+     width: 100px;
+     padding-bottom: 10px;
+ }
+
+
+
+
+
 
  .hide {
      display: none;
@@ -257,16 +319,23 @@
      }
 
      /* Trust Section */
-     .trust-section{
-        flex-direction: column-reverse;
+     .trust-section {
+         flex-direction: column-reverse;
      }
 
-     .trust-section{
-        margin-top: 20px;
-        padding: 30px;
+     .trust-section {
+         margin-top: 20px;
+         padding: 30px;
      }
 
-     .trust-section>img, .trust-text-container{
-        width: 100%;
+     .trust-section>img,
+     .trust-text-container {
+         width: 100%;
      }
+
+     /* our-Analysis Section */
+     .analysis-card-container {
+        flex-wrap: wrap;
+     }
+
  }
